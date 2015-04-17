@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "liboml_static", "liboml_static\liboml_static.vcxproj", "{70E6CB45-A4B2-4089-9425-9E8AC190CF7E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test", "test\test.vcxproj", "{13BD793E-FEA1-45A3-A695-AAA1C7DFFFF4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70E6CB45-A4B2-4089-9425-9E8AC190CF7E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{70E6CB45-A4B2-4089-9425-9E8AC190CF7E}.Debug|Win32.Build.0 = Debug|Win32
+		{70E6CB45-A4B2-4089-9425-9E8AC190CF7E}.Release|Win32.ActiveCfg = Release|Win32
+		{70E6CB45-A4B2-4089-9425-9E8AC190CF7E}.Release|Win32.Build.0 = Release|Win32
+		{13BD793E-FEA1-45A3-A695-AAA1C7DFFFF4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{13BD793E-FEA1-45A3-A695-AAA1C7DFFFF4}.Debug|Win32.Build.0 = Debug|Win32
+		{13BD793E-FEA1-45A3-A695-AAA1C7DFFFF4}.Release|Win32.ActiveCfg = Release|Win32
+		{13BD793E-FEA1-45A3-A695-AAA1C7DFFFF4}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
