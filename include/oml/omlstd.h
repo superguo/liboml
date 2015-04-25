@@ -56,4 +56,7 @@
 	#error define your own 16 bytes aligned macro
 #endif
 
+#define OML_ALIGN(_X, _Y) (_X) & (~(_Y) + 1) 
+#define OML_ALIGN_UP(_X, _Y) OML_ALIGN(_X + (_Y) - 1, _Y)
+
 #endif // ! _OML_STD_H

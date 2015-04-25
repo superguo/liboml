@@ -6,7 +6,7 @@
 
 OML_EXPORT omlMatrix* omlMatAlloc(size_t rows, size_t cols) {
 	// Force to add 16 bytes-aligned to make it easy to do multiply
-	size_t alloc_size = rows * cols * sizeof(float) + 4 * sizeof(size_t);
+	size_t alloc_size = OML_ALIGN_UP(rows * cols * sizeof(float) + 4 * sizeof(size_t), 16);
 	omlMatrix* result = (omlMatrix*) oml_aligned_malloc(alloc_size, 16);
 	if (result == NULL)
 		return NULL;
