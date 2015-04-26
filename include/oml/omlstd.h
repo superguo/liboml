@@ -25,12 +25,13 @@
 	#include <stdlib.h>
 	#define oml_malloc malloc
 	#define oml_free free
-#ifdef _MSC_VER
+#if defined(_MSC_VER)
 	#define oml_aligned_malloc _aligned_malloc
 	#define oml_aligned_free _aligned_free
-#else
-	#define oml_aligned_malloc aligned_malloc
-	#define oml_aligned_free aligned_free
+#elif defined(__MINGW32__)
+	#include <malloc.h>
+	#define oml_aligned_malloc __mingw_aligned_malloc
+	#define oml_aligned_free __mingw_aligned_free
 #endif
 #else
 	#error define your own memory allocation routines
@@ -41,7 +42,7 @@
 #endif
 
 #ifdef __GNUC__
-	#define OML_INLINE __attribute__((always_inline))
+	#define OML_INLINE extern __inline__ __attribute__((__always_inline__,__gnu_inline__))
 #elif defined(_MSC_VER)
 	#define OML_INLINE __forceinline
 #else
