@@ -1,2 +1,11 @@
 /win32vc10/*.sdf
 /win32vc10/*.suo
+/win32vc14/Debug
+/win32vc14/Release
+/win32vc14/liboml_static/Debug
+/win32vc14/liboml_static/Release
+/win32vc14/test/Release
+/win32vc14/test/Debug
+*.opensdf
+*.sdf
+/win32vc14/.vs
